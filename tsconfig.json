@@ -22,7 +22,7 @@
   },
   "include": [
     "src",
-    "my-firebase-key.json"
+    "firebase-key.json"
   ]
 }
 

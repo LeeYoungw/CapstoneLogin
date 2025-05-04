@@ -6,7 +6,7 @@ import { AuthModule } from './auth/auth.module';
 import * as admin from 'firebase-admin';
 import { join } from 'path';
 
-const serviceAccount = require(join(process.cwd(), 'my-firebase-key.json'));
+const serviceAccount = require(join(process.cwd(), 'firebase-key.json'));
 
 // Firebase Admin SDK 초기화 (한 번만 호출)
 admin.initializeApp({
@@ -21,7 +21,7 @@ admin.initializeApp({
       port: 3306, // MySQL 기본 포트
       username: 'root', // MySQL 계정
       password: 'sodksk12!@', // MySQL 비밀번호
-      database: 'game_login_table', // 사용할 데이터베이스명
+      database: 'capston', // 사용할 데이터베이스명
       synchronize: true, // 기존 테이블 유지
       autoLoadEntities: true, // 엔티티 자동 로드
     }),
